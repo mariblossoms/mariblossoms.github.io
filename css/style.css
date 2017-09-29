@@ -33,6 +33,11 @@ h2{
   font-size: 1.5em;
   text-align: center;
 }
+h3{
+  color: #FFF;
+  font-size: 1.3em;
+  text-align: justify;
+}
 
 #wrapper{
     margin: 0 auto;
@@ -164,9 +169,8 @@ body{
   background-attachment: local, local, scroll, scroll;
 }
 #list{
-  display: block;
-  padding-left: 1em;
-  list-style-type: circle;
+  padding-left: 2em;
+  display: list-item;
 }
 
 @media screen and (max-width: 1280px) {
@@ -182,9 +186,13 @@ body{
   h2{
     font-size: 2.5em;
   }
+  h3{
+    font-size: 2em;
+  }
   li{
     font-size: 1.7em;
 }
+
 }
 
 .socfoot{
