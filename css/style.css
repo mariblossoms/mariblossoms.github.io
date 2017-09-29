@@ -5,7 +5,7 @@
 
 }
 
-footer, header{
+header{
   display: block;
 }
 html{
@@ -20,7 +20,7 @@ p{
 }
 li{
   color: #FFF;
-  font-size: 1.3em;
+  font-size: 1em;
 }
 h1{
   color: #FFF;
@@ -39,7 +39,7 @@ h2{
     padding: 0 auto;
 }
 
-h1,#wrapper, header {
+#wrapper, header {
   width: auto%;
   max-width: auto;
   margin-left: auto;
@@ -49,9 +49,6 @@ h1,#wrapper, header {
   font-family: 'Roboto', sans-serif;
 }
 
-
-
-/* Header*/
 #header {
     text-align: center;
     font-size: 1.2em;
@@ -74,7 +71,7 @@ h1,#wrapper, header {
   border-radius: 100%;
   display: block;
   min-width: 5em;
-  max-width: 10em; /*160px*/
+  max-width: 10em;
 }
 
 body{
@@ -91,11 +88,12 @@ body{
   }
 
 .tabs {
-  min-width: 40em; /*320px/1280px*/
-  max-width: 80em;/*800px/1280px**/
+  min-width: 40em;
+  max-width: 80em;
   position: relative;
 	margin: 0 auto;
 }
+
 .tabs label {
 	color: #FFF;
   font-size: 2.5em;
@@ -104,17 +102,16 @@ body{
 	display: block;
 	float: left;
 	width: 8em;
-	height: 4em;
+	height: 3.5em;
 	line-height: 3em;
 	position: relative;
-	top: 0.4em;
+	top: 0.3em;
 	text-align: center;
 }
 
 .tabs input {
 	position: absolute;
   display: none;
-
 }
 
 #tab_1:checked  ~ #tab_l1,
@@ -134,15 +131,14 @@ body{
   position: relative;
 	z-index: 2;
 	max-height: 70em;
+  clear:both;
 }
 
 .tabs_cont > div {
 	position: absolute;
-	left: -9999px;
+  left: -99999px;
 	top: 0;
 	opacity: 0;
-	-moz-transition: opacity .5s ease-in-out;
-	-webkit-transition: opacity .5s ease-in-out;
 	transition: opacity .5s ease-in-out;
 }
 #tab_1:checked ~ .tabs_cont #tab_c1,
@@ -164,31 +160,19 @@ body{
 
 .scrollbox{
   overflow: auto;
-  max-height: 50em;/*320px*/
-/*  background-size: 100% 40px, 100% 40px, 100% 14px, 100% 14px;*/
+  max-height: 70em;
   background-attachment: local, local, scroll, scroll;
 }
-
-#footer {
-  text-align: center;
-  padding: 2em 0 2em 0;
-}
-
-#footer:before {
-    content: '';
-    border-top: solid 1px rgba(255, 255, 255, 0.25);
-    width: 10em;
-    display: block;
-    margin: 0 auto 3em auto;
+#list{
+  display: block;
+  padding-left: 1em;
+  list-style-type: circle;
 }
 
 @media screen and (max-width: 1280px) {
   .tabs {
     padding: 2em 0 3em 0;
   }
-  #footer {
-      padding: 1em 0 1em 0;
-    }
   body {
     font-size: 0.7em;
   }
@@ -198,8 +182,8 @@ body{
   h2{
     font-size: 2.5em;
   }
-  ul{
-    font-size: 2em;
+  li{
+    font-size: 1.7em;
 }
 }
 
@@ -208,16 +192,6 @@ body{
   width: 100%;
   clear: both;
   }
-  .socfoot>a>img {width: 50px; height: 50px;}
-  .socfoot>a>img:first-child {margin: 25px 25px 25px 5%;}
-  .socfoot>a>img:nth-child(2) {margin-left: 0}
-  .socfoot>a>img:nth-child(3) {margin-left: 0}
-  .socfoot>a>img:nth-child(4) {margin-left: 0}
-  .socfoot>a>img:nth-child(5) {margin-left: 0}
-  .socfoot>a>img:nth-child(6) {margin-left: 0}
-  .menufoot {
-      height: 6.25em;
-      widows: 100%;
-      background-color: #fafef9;
-      clear: both;
+  .socfoot>a>img {width: 3.5em; height: 3.5em;}
+  .socfoot>a>img:first-child {margin: 1em 1em 1em 1em;}
   }
